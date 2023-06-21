@@ -11810,3 +11810,88 @@ playwright._impl._api_types.TimeoutError: Timeout 30000ms exceeded.
 =========================== logs ===========================
 waiting for selector ".cart-amount"
 ============================================================
+2023-06-22 06:24:03.444 | INFO     | services.deploy:job_loop_claim:104 - >> STARTUP [AwesomeScheduler] SynergyTunnel - version=0.4.4-dev Pattern=False
+2023-06-22 06:24:03.804 | INFO     | services.bricklayer.core:load_ctx_cookies:659 - >> LOAD [CookieManager] Load context cookie
+2023-06-22 06:24:05.676 | INFO     | services.bricklayer.core:refresh_ctx_cookies:691 - >> MATCH [__context__] 🎮启动挑战者上下文
+2023-06-22 06:24:05.720 | INFO     | services.bricklayer.core:login:491 - >> MATCH [CookieManager] 刷新令牌
+2023-06-22 06:24:13.348 | INFO     | services.bricklayer.core:login:526 - >> MATCH [CookieManager] 实体信息注入完毕
+2023-06-22 06:24:13.348 | INFO     | services.bricklayer.core:fall_in_captcha_login:36 - >> ARMOR [ArmorUtils] 正在检测隐藏在登录界面的人机挑战...
+2023-06-22 06:24:15.514 | DEBUG    | hcaptcha_challenger.core:log:317 - >> Challenge [ArmorCaptcha] Get label - label=「建筑物」
+2023-06-22 06:24:15.514 | DEBUG    | hcaptcha_challenger.core:log:317 - >> Challenge [ArmorCaptcha] 正在编排索引
+2023-06-22 06:24:16.020 | DEBUG    | hcaptcha_challenger.core:log:317 - >> Challenge [ArmorCaptcha] 正在下载挑战图片
+2023-06-22 06:24:17.117 | DEBUG    | hcaptcha_challenger.core:log:317 - >> Challenge [ArmorCaptcha] Download challenge images - timeit=1.1s
+2023-06-22 06:24:17.332 | INFO     | services.bricklayer.core:login:491 - >> MATCH [CookieManager] 刷新令牌
+2023-06-22 06:24:24.036 | INFO     | services.bricklayer.core:login:526 - >> MATCH [CookieManager] 实体信息注入完毕
+2023-06-22 06:24:24.036 | INFO     | services.bricklayer.core:fall_in_captcha_login:36 - >> ARMOR [ArmorUtils] 正在检测隐藏在登录界面的人机挑战...
+2023-06-22 06:24:26.194 | DEBUG    | hcaptcha_challenger.core:log:317 - >> Challenge [ArmorCaptcha] Get label - label=「下图中显示的是什么动物？」
+2023-06-22 06:24:26.194 | DEBUG    | hcaptcha_challenger.core:log:317 - >> Challenge [ArmorCaptcha] 正在编排索引
+2023-06-22 06:24:26.277 | DEBUG    | hcaptcha_challenger.core:log:317 - >> Challenge [ArmorCaptcha] 正在下载挑战图片
+2023-06-22 06:24:27.486 | DEBUG    | hcaptcha_challenger.core:log:317 - >> Challenge [ArmorCaptcha] Download challenge images - timeit=1.21s
+2023-06-22 06:24:27.684 | INFO     | services.bricklayer.core:login:491 - >> MATCH [CookieManager] 刷新令牌
+2023-06-22 06:24:35.679 | INFO     | services.bricklayer.core:login:526 - >> MATCH [CookieManager] 实体信息注入完毕
+2023-06-22 06:24:35.680 | INFO     | services.bricklayer.core:fall_in_captcha_login:36 - >> ARMOR [ArmorUtils] 正在检测隐藏在登录界面的人机挑战...
+2023-06-22 06:24:37.908 | DEBUG    | hcaptcha_challenger.core:log:317 - >> Challenge [ArmorCaptcha] Get label - label=「下图中显示的是什么动物？」
+2023-06-22 06:24:37.908 | DEBUG    | hcaptcha_challenger.core:log:317 - >> Challenge [ArmorCaptcha] 正在编排索引
+2023-06-22 06:24:37.968 | DEBUG    | hcaptcha_challenger.core:log:317 - >> Challenge [ArmorCaptcha] 正在下载挑战图片
+2023-06-22 06:24:39.026 | DEBUG    | hcaptcha_challenger.core:log:317 - >> Challenge [ArmorCaptcha] Download challenge images - timeit=1.06s
+2023-06-22 06:24:39.198 | INFO     | services.bricklayer.core:login:491 - >> MATCH [CookieManager] 刷新令牌
+2023-06-22 06:24:45.663 | INFO     | services.bricklayer.core:login:526 - >> MATCH [CookieManager] 实体信息注入完毕
+2023-06-22 06:24:45.663 | INFO     | services.bricklayer.core:fall_in_captcha_login:36 - >> ARMOR [ArmorUtils] 正在检测隐藏在登录界面的人机挑战...
+2023-06-22 06:24:47.812 | DEBUG    | hcaptcha_challenger.core:log:317 - >> Challenge [ArmorCaptcha] Get label - label=「建筑物」
+2023-06-22 06:24:47.813 | DEBUG    | hcaptcha_challenger.core:log:317 - >> Challenge [ArmorCaptcha] 正在编排索引
+2023-06-22 06:24:48.253 | DEBUG    | hcaptcha_challenger.core:log:317 - >> Challenge [ArmorCaptcha] 正在下载挑战图片
+2023-06-22 06:24:49.293 | DEBUG    | hcaptcha_challenger.core:log:317 - >> Challenge [ArmorCaptcha] Download challenge images - timeit=1.04s
+2023-06-22 06:24:49.475 | INFO     | services.bricklayer.core:login:491 - >> MATCH [CookieManager] 刷新令牌
+2023-06-22 06:24:56.148 | INFO     | services.bricklayer.core:login:526 - >> MATCH [CookieManager] 实体信息注入完毕
+2023-06-22 06:24:56.148 | INFO     | services.bricklayer.core:fall_in_captcha_login:36 - >> ARMOR [ArmorUtils] 正在检测隐藏在登录界面的人机挑战...
+2023-06-22 06:24:58.291 | DEBUG    | hcaptcha_challenger.core:log:317 - >> Challenge [ArmorCaptcha] Get label - label=「下图中显示的是什么动物？」
+2023-06-22 06:24:58.291 | DEBUG    | hcaptcha_challenger.core:log:317 - >> Challenge [ArmorCaptcha] 正在编排索引
+2023-06-22 06:24:58.345 | DEBUG    | hcaptcha_challenger.core:log:317 - >> Challenge [ArmorCaptcha] 正在下载挑战图片
+2023-06-22 06:24:59.373 | DEBUG    | hcaptcha_challenger.core:log:317 - >> Challenge [ArmorCaptcha] Download challenge images - timeit=1.03s
+2023-06-22 06:24:59.537 | INFO     | services.bricklayer.core:login:491 - >> MATCH [CookieManager] 刷新令牌
+2023-06-22 06:25:06.030 | INFO     | services.bricklayer.core:login:526 - >> MATCH [CookieManager] 实体信息注入完毕
+2023-06-22 06:25:06.030 | INFO     | services.bricklayer.core:fall_in_captcha_login:36 - >> ARMOR [ArmorUtils] 正在检测隐藏在登录界面的人机挑战...
+2023-06-22 06:25:08.190 | DEBUG    | hcaptcha_challenger.core:log:317 - >> Challenge [ArmorCaptcha] Get label - label=「建筑物」
+2023-06-22 06:25:08.191 | DEBUG    | hcaptcha_challenger.core:log:317 - >> Challenge [ArmorCaptcha] 正在编排索引
+2023-06-22 06:25:08.581 | DEBUG    | hcaptcha_challenger.core:log:317 - >> Challenge [ArmorCaptcha] 正在下载挑战图片
+2023-06-22 06:25:09.634 | DEBUG    | hcaptcha_challenger.core:log:317 - >> Challenge [ArmorCaptcha] Download challenge images - timeit=1.05s
+2023-06-22 06:25:09.834 | INFO     | services.bricklayer.core:login:491 - >> MATCH [CookieManager] 刷新令牌
+2023-06-22 06:25:16.535 | INFO     | services.bricklayer.core:login:526 - >> MATCH [CookieManager] 实体信息注入完毕
+2023-06-22 06:25:16.536 | INFO     | services.bricklayer.core:fall_in_captcha_login:36 - >> ARMOR [ArmorUtils] 正在检测隐藏在登录界面的人机挑战...
+2023-06-22 06:25:18.652 | DEBUG    | hcaptcha_challenger.core:log:317 - >> Challenge [ArmorCaptcha] Get label - label=「动物」
+2023-06-22 06:25:18.652 | DEBUG    | hcaptcha_challenger.core:log:317 - >> Challenge [ArmorCaptcha] 正在编排索引
+2023-06-22 06:25:19.050 | DEBUG    | hcaptcha_challenger.core:log:317 - >> Challenge [ArmorCaptcha] 正在下载挑战图片
+2023-06-22 06:25:20.128 | DEBUG    | hcaptcha_challenger.core:log:317 - >> Challenge [ArmorCaptcha] Download challenge images - timeit=1.08s
+2023-06-22 06:25:20.246 | ERROR    | services.scaffold:claim:138 - An error has been caught in function 'claim', process 'MainProcess' (1824), thread 'MainThread' (140011634441280):
+Traceback (most recent call last):
+  File "/home/runner/work/freegame/freegame/epic/src/main.py", line 11, in <module>
+    Fire(Scaffold)
+  File "/opt/hostedtoolcache/Python/3.10.12/x64/lib/python3.10/site-packages/fire/core.py", line 141, in Fire
+    component_trace = _Fire(component, args, parsed_flag_args, context, name)
+  File "/opt/hostedtoolcache/Python/3.10.12/x64/lib/python3.10/site-packages/fire/core.py", line 466, in _Fire
+    component, remaining_args = _CallAndUpdateTrace(
+  File "/opt/hostedtoolcache/Python/3.10.12/x64/lib/python3.10/site-packages/fire/core.py", line 681, in _CallAndUpdateTrace
+    component = fn(*varargs, **kwargs)
+  File "/home/runner/work/freegame/freegame/epic/src/services/scaffold.py", line 143, in unreal
+    Scaffold.claim(silence=silence, ignore=ignore, unreal=True)
+> File "/home/runner/work/freegame/freegame/epic/src/services/scaffold.py", line 138, in claim
+    claimer.run(silence=silence, log_ignore=ignore, unreal=unreal)
+  File "/home/runner/work/freegame/freegame/epic/src/apis/scaffold/claimer.py", line 26, in run
+    ClaimerScheduler(silence=silence, unreal=unreal).job_loop_claim(log_ignore)
+  File "/home/runner/work/freegame/freegame/epic/src/services/deploy.py", line 108, in job_loop_claim
+    with UnrealClaimerInstance(self.silence, log_ignore=log_ignore) as claimer:
+  File "/home/runner/work/freegame/freegame/epic/src/services/deploy.py", line 164, in __enter__
+    fire(  # token
+  File "/home/runner/work/freegame/freegame/epic/src/services/utils/toolbox.py", line 84, in fire
+    container(context)
+  File "/home/runner/work/freegame/freegame/epic/src/services/bricklayer/core.py", line 708, in refresh_ctx_cookies
+    resp = self.armor.anti_hcaptcha(page, window="login", recur_url=recur_url)
+  File "/home/runner/work/freegame/freegame/epic/src/services/bricklayer/core.py", line 267, in anti_hcaptcha
+    self.challenge(frame_challenge, model=model)
+  File "/home/runner/work/freegame/freegame/epic/src/services/bricklayer/core.py", line 125, in challenge
+    result = model.solution(img_stream=data, label=self.label_alias[self.label])
+  File "/opt/hostedtoolcache/Python/3.10.12/x64/lib/python3.10/site-packages/hcaptcha_challenger/_solutions/resnet.py", line 66, in solution
+    return self.classifier(img_stream, feature_filters=None)
+  File "/opt/hostedtoolcache/Python/3.10.12/x64/lib/python3.10/site-packages/hcaptcha_challenger/_solutions/resnet.py", line 34, in classifier
+    if img.shape[0] == ChallengeStyle.WATERMARK:
+AttributeError: 'NoneType' object has no attribute 'shape'
