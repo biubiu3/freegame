@@ -1,3 +1,4 @@
-2023/06/17-06:29:58.932 de6 Reusing MANIFEST /home/runner/work/freegame/freegame/epic/src/database/users/dad04b5d2018f2886fc4ffa62e67aadd8e7770682bf959b92ae44e6ee1efbb7c/Default/Session Storage/MANIFEST-000001
-2023/06/17-06:29:58.932 de6 Recovering log #4
-2023/06/17-06:29:58.933 de6 Reusing old log /home/runner/work/freegame/freegame/epic/src/database/users/dad04b5d2018f2886fc4ffa62e67aadd8e7770682bf959b92ae44e6ee1efbb7c/Default/Session Storage/000004.log 
+2023/06/22-06:24:05.203 7be Reusing MANIFEST /home/runner/work/freegame/freegame/epic/src/database/users/dad04b5d2018f2886fc4ffa62e67aadd8e7770682bf959b92ae44e6ee1efbb7c/Default/Session Storage/MANIFEST-000001
+2023/06/22-06:24:05.210 7be Recovering log #4
+2023/06/22-06:24:05.215 7be Reusing old log /home/runner/work/freegame/freegame/epic/src/database/users/dad04b5d2018f2886fc4ffa62e67aadd8e7770682bf959b92ae44e6ee1efbb7c/Default/Session Storage/000004.log 
+2023/06/22-06:24:05.216 7be Delete type=0 #3
