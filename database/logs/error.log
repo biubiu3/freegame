@@ -2978,3 +2978,76 @@ Traceback (most recent call last):
   File "/opt/hostedtoolcache/Python/3.10.12/x64/lib/python3.10/site-packages/hcaptcha_challenger/_solutions/resnet.py", line 34, in classifier
     if img.shape[0] == ChallengeStyle.WATERMARK:
 AttributeError: 'NoneType' object has no attribute 'shape'
+2023-07-15 06:30:26.537 | ERROR    | services.scaffold:claim:138 - An error has been caught in function 'claim', process 'MainProcess' (1833), thread 'MainThread' (140047174470720):
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.10.12/x64/lib/python3.10/site-packages/urllib3/connectionpool.py", line 714, in urlopen
+    httplib_response = self._make_request(
+  File "/opt/hostedtoolcache/Python/3.10.12/x64/lib/python3.10/site-packages/urllib3/connectionpool.py", line 403, in _make_request
+    self._validate_conn(conn)
+  File "/opt/hostedtoolcache/Python/3.10.12/x64/lib/python3.10/site-packages/urllib3/connectionpool.py", line 1053, in _validate_conn
+    conn.connect()
+  File "/opt/hostedtoolcache/Python/3.10.12/x64/lib/python3.10/site-packages/urllib3/connection.py", line 419, in connect
+    self.sock = ssl_wrap_socket(
+  File "/opt/hostedtoolcache/Python/3.10.12/x64/lib/python3.10/site-packages/urllib3/util/ssl_.py", line 449, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(
+  File "/opt/hostedtoolcache/Python/3.10.12/x64/lib/python3.10/site-packages/urllib3/util/ssl_.py", line 493, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+  File "/opt/hostedtoolcache/Python/3.10.12/x64/lib/python3.10/ssl.py", line 513, in wrap_socket
+    return self.sslsocket_class._create(
+  File "/opt/hostedtoolcache/Python/3.10.12/x64/lib/python3.10/ssl.py", line 1071, in _create
+    self.do_handshake()
+  File "/opt/hostedtoolcache/Python/3.10.12/x64/lib/python3.10/ssl.py", line 1342, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLError: [SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1007)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.10.12/x64/lib/python3.10/site-packages/requests/adapters.py", line 489, in send
+    resp = conn.urlopen(
+  File "/opt/hostedtoolcache/Python/3.10.12/x64/lib/python3.10/site-packages/urllib3/connectionpool.py", line 798, in urlopen
+    retries = retries.increment(
+  File "/opt/hostedtoolcache/Python/3.10.12/x64/lib/python3.10/site-packages/urllib3/util/retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='imgs.hcaptcha.com', port=443): Max retries exceeded with url: /1IHneq1cwGefZ1vYYZbY5tABhIyzdsoiNZbtRFGq2W9KAtf/4RD3Ez4tZENqGxrt0/o4T4vJKsFH3Vi9xYa9NBcCpIvHdAePRZTDd2fU7foC5WDo7s4zYmyWry8EiFTGbCk3Lcbex6kcvtovdlSUMl9kdfkflPCUgGvEkqTHE5FQYWO/PnuW3BEWlNBaLuZxhjOor3FH1jqviqob06q2aUJ+0/n9826fMR1TUQ==b97X8GHpApX91bUr (Caused by SSLError(SSLError(1, '[SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1007)')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/runner/work/freegame/freegame/epic/src/main.py", line 11, in <module>
+    Fire(Scaffold)
+  File "/opt/hostedtoolcache/Python/3.10.12/x64/lib/python3.10/site-packages/fire/core.py", line 141, in Fire
+    component_trace = _Fire(component, args, parsed_flag_args, context, name)
+  File "/opt/hostedtoolcache/Python/3.10.12/x64/lib/python3.10/site-packages/fire/core.py", line 466, in _Fire
+    component, remaining_args = _CallAndUpdateTrace(
+  File "/opt/hostedtoolcache/Python/3.10.12/x64/lib/python3.10/site-packages/fire/core.py", line 681, in _CallAndUpdateTrace
+    component = fn(*varargs, **kwargs)
+  File "/home/runner/work/freegame/freegame/epic/src/services/scaffold.py", line 143, in unreal
+    Scaffold.claim(silence=silence, ignore=ignore, unreal=True)
+> File "/home/runner/work/freegame/freegame/epic/src/services/scaffold.py", line 138, in claim
+    claimer.run(silence=silence, log_ignore=ignore, unreal=unreal)
+  File "/home/runner/work/freegame/freegame/epic/src/apis/scaffold/claimer.py", line 26, in run
+    ClaimerScheduler(silence=silence, unreal=unreal).job_loop_claim(log_ignore)
+  File "/home/runner/work/freegame/freegame/epic/src/services/deploy.py", line 108, in job_loop_claim
+    with UnrealClaimerInstance(self.silence, log_ignore=log_ignore) as claimer:
+  File "/home/runner/work/freegame/freegame/epic/src/services/deploy.py", line 164, in __enter__
+    fire(  # token
+  File "/home/runner/work/freegame/freegame/epic/src/services/utils/toolbox.py", line 84, in fire
+    container(context)
+  File "/home/runner/work/freegame/freegame/epic/src/services/bricklayer/core.py", line 708, in refresh_ctx_cookies
+    resp = self.armor.anti_hcaptcha(page, window="login", recur_url=recur_url)
+  File "/home/runner/work/freegame/freegame/epic/src/services/bricklayer/core.py", line 255, in anti_hcaptcha
+    self.download_images()
+  File "/home/runner/work/freegame/freegame/epic/src/services/bricklayer/core.py", line 101, in download_images
+    file.write(requests.get(url_, proxies=getproxies()).content)
+  File "/opt/hostedtoolcache/Python/3.10.12/x64/lib/python3.10/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+  File "/opt/hostedtoolcache/Python/3.10.12/x64/lib/python3.10/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/opt/hostedtoolcache/Python/3.10.12/x64/lib/python3.10/site-packages/requests/sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/opt/hostedtoolcache/Python/3.10.12/x64/lib/python3.10/site-packages/requests/sessions.py", line 701, in send
+    r = adapter.send(request, **kwargs)
+  File "/opt/hostedtoolcache/Python/3.10.12/x64/lib/python3.10/site-packages/requests/adapters.py", line 563, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='imgs.hcaptcha.com', port=443): Max retries exceeded with url: /1IHneq1cwGefZ1vYYZbY5tABhIyzdsoiNZbtRFGq2W9KAtf/4RD3Ez4tZENqGxrt0/o4T4vJKsFH3Vi9xYa9NBcCpIvHdAePRZTDd2fU7foC5WDo7s4zYmyWry8EiFTGbCk3Lcbex6kcvtovdlSUMl9kdfkflPCUgGvEkqTHE5FQYWO/PnuW3BEWlNBaLuZxhjOor3FH1jqviqob06q2aUJ+0/n9826fMR1TUQ==b97X8GHpApX91bUr (Caused by SSLError(SSLError(1, '[SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1007)')))
